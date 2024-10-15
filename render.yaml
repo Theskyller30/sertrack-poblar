@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: sertrack-poblar 
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run poblar_bd.py --server.port 10000" 
+    port: 10000
